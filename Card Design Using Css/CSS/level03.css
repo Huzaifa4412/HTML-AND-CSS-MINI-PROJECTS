@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Baloo Bhai 2", serif;
+    width: 100%;
+    height: 100%;
+}
+
+/** Background Design */
+#container::before {
+    content: '';
+    background: url("../images/foodpandabg.png") no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.85;
+}
+
+#heading {
+    height: 12vh;
+}
+
+#heading h1 {
+
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    /* background-color: red; */
+    font-weight: 900;
+    -webkit-text-stroke: 2px #fff;
+    position: relative;
+    padding-left: 3.5%;
+    /* background-color: rebeccapurple; */
+
+}
+
+#heading h1::after {
+    content: '';
+    background: #fff;
+    width: 154px;
+    height: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: absolute;
+    /* left: 50%; */
+    left: 17%;
+    bottom: 15px;
+    transform: translateX(-50%);
+}
+
+.cards {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    border: 2px solid green;
+    border: 5px solid #d2b591;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.card1{
+
+    border: 5px solid RGB(25, 16, 11);
+}
+.card2 {
+    border: 5px solid #d2b591;
+    
+}
+.card3{
+    
+    border: 5px solid RGB(215, 15, 100,0.45);
+}
+.sub-section1 {
+    width: 100%;
+    height: 60%;
+    background-color: red;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.img1 {
+    background: url('../images/pizza.png') no-repeat center center/100%;
+}
+
+.img2 {
+    background: url("../images/Icecream.jpg") no-repeat center center/100%;
+}
+
+.img3 {
+    background: url("../images/coffee.jpg") no-repeat center center/cover;
+}
+
+.sub-section2 {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+}
+
+#name {
+    width: 70%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.svg {
+    width: 20px;
+    height: 30px;
+    /* margin-top: 5px; */
+    padding-top: 2px;
+    /* margin-top: 10px; */
+    /* display: inline-block; */
+    /* padding-top: 10px; */
+
+
+}
+
+#name1 {
+    font-size: 22px;
+
+    font-weight: 900;
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+
+.sub-section3 {
+    width: 100%;
+    height: 25%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#price {
+    width: 100%;
+    padding-left: 30%;
+}
+
+#price #bill {
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+#billPrice span {
+    color: RGB(215, 15, 100);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#billPrice {
+    color: black;
+    font-weight: 900;
+}
+
+#splitWith {
+    width: 50%;
+    background-color: #d2b591;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100%;
+}
+
+#text {
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+#imgs {
+    padding-top: 10px;
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+    width: 50%;
+
+}
+
+.spit_imgs {
+    background-color: #dc287c84 !important;
+}
+
+.img_split {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.img_split3 {
+    background-color: RGB(25, 16, 11) !important;
+}
+
+.split {
+    display: flex
+}
+
+.splitnow {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+#btn1{
+    background-color: RGB(25, 16, 11);
+}
+#btn2 {
+    background-color: #d2b591;
+
+}
+
+#btn3 {
+    background-color: #dc287c84;
+}
